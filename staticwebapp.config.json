@@ -7,6 +7,10 @@
     {
       "route": "/lobby",
       "serve": "/lobby.html"
+    },
+    {
+      "route": "/index.html",
+      "serve": "/index.html"
     }
   ]
 }
