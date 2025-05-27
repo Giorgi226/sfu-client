@@ -9,7 +9,7 @@
       "serve": "/lobby.html"
     },
     {
-      "route": "/index.html",
+      "route": "/index*",
       "serve": "/index.html"
     }
   ]
