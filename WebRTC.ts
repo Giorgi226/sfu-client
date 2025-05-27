@@ -18,7 +18,7 @@ export class WebRTC {
     private outTransport!: Transport
     private device: mediaSoupClient.Device | null = null;
     roomId: string | null = null;
-    constraints = {
+    constraints = { 
         video: {
             width: { min: 640, ideal: 1920, max: 1920 },
             height: { min: 480, ideal: 1000, max: 1000 },
@@ -33,6 +33,7 @@ export class WebRTC {
     };
     handleUserLeft: () => void = () => {};
     handleUserConnection: () => void = () => {};
+    NoWorker: () => void = () => {};
     toggleMic: () => void = () => {};
     toggleCamera: () => void = () => {};
     toggleRecord: () => void = () => {};
@@ -62,6 +63,7 @@ export class WebRTC {
            this.subscribe()
         })
         this.socket.on('user-left', this.handleLeavingUser)
+        this.socket.on('no-worker', this.NoWorker)
     }
 
     async init() {

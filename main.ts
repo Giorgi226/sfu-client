@@ -28,7 +28,9 @@ const init = async () => {
 webRTC.handleUserConnection = () => {
     user1.srcObject = webRTC.localStream
 }
-
+webRTC.NoWorker = () => {
+    window.location.href = 'lobby.html'
+}
 webRTC.toggleCamera = () => {
     if(webRTC.producerVideo?.paused){
         webRTC.producerVideo.resume()
