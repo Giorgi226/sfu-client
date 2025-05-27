@@ -12,7 +12,7 @@ const urlParams = new URLSearchParams(queryString);
 const roomId = urlParams.get('room');
 
 if (!roomId) {
-    window.location.href = 'lobby.html';
+    window.location.href = '/lobby.html';
 }
 
 const user1 = document.getElementById('user-1') as HTMLVideoElement

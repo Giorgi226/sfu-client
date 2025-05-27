@@ -1,0 +1,12 @@
+{
+  "navigationFallback": {
+    "rewrite": "/index.html",
+    "exclude": ["/lobby.html"]
+  },
+  "routes": [
+    {
+      "route": "/lobby",
+      "serve": "/lobby.html"
+    }
+  ]
+}
