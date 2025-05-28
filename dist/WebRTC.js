@@ -51,7 +51,7 @@ export class WebRTC {
                 console.log('iceee candidateesssss: ', data.parameters.iceCandidates);
                 console.log('iceee candidateesssss: ', data.parameters);
                 console.log('iceee candidateesssss: ', data);
-                console.log('iceee candidateesssss: ');
+                console.log('iceee candidateesssssssssssssssssss: ');
                 this.outTransport = transport;
                 transport === null || transport === void 0 ? void 0 : transport.on('connect', (_a, callback_1, errback_1) => __awaiter(this, [_a, callback_1, errback_1], void 0, function* ({ dtlsParameters }, callback, errback) {
                     this.socket.emit(SignalingMessages.ConnectProducerTransport, dtlsParameters);

@@ -103,7 +103,7 @@ export class WebRTC {
             console.log('iceee candidateesssss: ', data.parameters.iceCandidates)
             console.log('iceee candidateesssss: ', data.parameters)
             console.log('iceee candidateesssss: ', data)
-            console.log('iceee candidateesssss: ')
+            console.log('iceee candidateesssssssssssssssssss: ')
             this.outTransport = transport!
         transport?.on('connect', async ({dtlsParameters}, callback, errback) => {
         
