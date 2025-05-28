@@ -10,6 +10,12 @@
     {
       "route": "/index*",
       "serve": "/index.html"
+    },
+    {
+      "route": "*.ts",
+      "headers": {
+        "Content-Type": "text/javascript"
+      }
     }
   ]
 }
