@@ -1,6 +1,11 @@
 import { SignalingMessages } from "./types/SignalingMessages.js";
 import { WebRTC } from "./WebRTC.js";
-const socket = io('https://40.67.177.240:3016');
+const socket = io('https://sfu-server.centralus.cloudapp.azure.com', {
+            path: '/socket.io',
+            transports: ['websocket'],
+            reconnection: true,
+            reconnectionAttempts: 5
+        });
 const webRTC = new WebRTC(socket);
 
 document.addEventListener('DOMContentLoaded', function(){
