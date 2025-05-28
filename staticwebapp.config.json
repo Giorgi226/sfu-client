@@ -1,7 +1,6 @@
 {
   "navigationFallback": {
-    "rewrite": "/index.html",
-    "exclude": ["/lobby.html"]
+    "rewrite": "/index.html"
   },
   "routes": [
     {
