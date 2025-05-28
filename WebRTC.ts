@@ -100,6 +100,7 @@ export class WebRTC {
           
         }else {
             const transport = this.device?.createSendTransport(data.parameters)
+            console.log('iceee candidateesssss: ', data.parameters.iceCandidates)
             this.outTransport = transport!
         transport?.on('connect', async ({dtlsParameters}, callback, errback) => {
         
