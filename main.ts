@@ -1,6 +1,6 @@
 import { SignalingMessages } from "./types/SignalingMessages.js";
 import { WebRTC } from "./WebRTC.js";
-const socket = io('http://localhost:3012');
+const socket = io('http://40.67.177.240:3016');
 const webRTC = new WebRTC(socket);
 
 document.addEventListener('DOMContentLoaded', function(){
