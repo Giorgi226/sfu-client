@@ -76,6 +76,6 @@ webRTC.toggleRecord = () => {
 
 camera.addEventListener('click', webRTC.toggleCamera)
 microphone.addEventListener('click', webRTC.toggleMic)
-//record.addEventListener('click', webRTC.toggleRecord)
+record.addEventListener('click', webRTC.toggleRecord)
 
 init()
