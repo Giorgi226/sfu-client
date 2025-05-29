@@ -1,11 +1,13 @@
 import { SignalingMessages } from "./types/SignalingMessages.js";
 import { WebRTC } from "./WebRTC.js";
-const socket = io('https://sfu-server.centralus.cloudapp.azure.com', {
-            path: '/socket.io',
-            transports: ['websocket'],
-            reconnection: true,
-            reconnectionAttempts: 5
-        });
+// const socket = io('https://sfu-server.centralus.cloudapp.azure.com', {
+//             path: '/socket.io',
+//             transports: ['websocket'],
+//             reconnection: true,
+//             reconnectionAttempts: 5
+//         });
+
+const socket = io('http://localhost:3016')
 const webRTC = new WebRTC(socket);
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -76,6 +78,6 @@ webRTC.toggleRecord = () => {
 
 camera.addEventListener('click', webRTC.toggleCamera)
 microphone.addEventListener('click', webRTC.toggleMic)
-//record.addEventListener('click', webRTC.toggleRecord)
+record.addEventListener('click', webRTC.toggleRecord)
 
 init()
